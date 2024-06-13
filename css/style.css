@@ -115,7 +115,7 @@ html{
 }
 
 .logo span{
-    color: var(--Soft-Blue);
+    color: var(--Soft-Red);
     font-size: 2.5rem;
     padding: .5rem;
 }
@@ -217,12 +217,17 @@ html{
     padding-top: 15rem;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     /* main property for responsiveness */
     gap: 10.5rem;
     justify-content: center;
 }
 
+@media screen and (max-width: 768px){
+    .home{
+        flex-wrap: wrap;
+    }
+    
+}
 
 .home .image{
     flex: 1 2 50rem;
@@ -309,7 +314,7 @@ html{
     background-color: #fff;
     color: #000;
     font-size: 1.4rem;
-    box-shadow: .5rem .5rem hsl(231, 69%, 60%);
+    box-shadow: .5rem .5rem hsl(341, 69%, 60%);
     border: 2px solid var(--Soft-Blue);
     border-radius: .5rem;
 }
@@ -320,10 +325,6 @@ html{
     box-shadow: none;
     color: #fff;
 }
-
-
-
-
 /* home section ends */
 
 
@@ -375,7 +376,7 @@ html{
 .Books .box-container{
     display: grid;
     gap: 4rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
